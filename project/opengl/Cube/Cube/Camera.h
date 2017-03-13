@@ -22,8 +22,8 @@ public:
 
 	void updateCameraMatrix()
 	{
-		_x = cross(_up, _z);
-		_y = cross(_z, _x);
+		_x = normalize(cross(_up, _z));
+		_y = normalize(cross(_z, _x));
 
 		mat4 rot = mat4(vec4(_x, 0.0f), vec4(_y, 0.0f), vec4(_z, 0.0f), vec4(0.0f, 0.0f, 0.0f, 1.0f));
 		mat4 trans = translate(-_position);
