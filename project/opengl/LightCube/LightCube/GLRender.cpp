@@ -20,7 +20,7 @@ struct Vertex
 	GLfloat position[3];
 	GLfloat color[3];
 	GLfloat texcoord[2];
-	GLfloat nornal[3];
+	GLfloat normal[3];
 }; 
 
 GLuint vao, vbo, ebo;
